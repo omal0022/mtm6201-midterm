@@ -53,11 +53,15 @@ table {
 
 /* General */
 header img {
-	/* how to center it */
+	padding: 1rem;
+	height: 150px;
+	width: 100%;
+	margin: auto;
+
 }
 nav a{
 	font-family: "rift-soft", sans-serif;
-	font-weight: 600;
+	font-weight: 500;
 	font-style: italic;
  	text-decoration: none;
 	font-size: 1.5rem;
@@ -67,10 +71,12 @@ body h1, h3 {
 	font-family: "condor-condensed", sans-serif;
 	font-weight: 700;
 	font-style: italic;
+	letter-spacing: 1.5px
 }
 
 h1 {
 	font-size: 3rem;
+	text-shadow: 2px 2px 5px rgb(0,0,0,.5);
 }
 
 h3 {
@@ -81,25 +87,29 @@ h3 {
 body h2 {
 	font-family: "condor-condensed", sans-serif;
 	font-weight: bold;
-	font-style: normal;
-	font-size: 2rem;
+	font-style: italic;
+	font-size: 2.3rem;
+	text-align: center;
+	color: #42476c;
+	padding-top: 1.5rem;
 }
 
 body h4 {
 	font-family: "pill-gothic-600mg", sans-serif;
 	font-weight: 300;
 	font-style: normal;
+	line-height: 1.5;
 }
 
 body p {
 	font-family: "rift-soft", sans-serif;
-	font-weight: 500;
+	font-weight: 400;
 	font-style: italic;
-	margin-top: 1em;
+	line-height: 1.3;
+	font-size: 1.1rem;
 }
 
 button {
-	margin-top: 1em;
 	padding: .75rem 2rem;
 	border: none;
 	background-color: #db6d40;
@@ -140,7 +150,6 @@ nav a:visited {
 	width: auto;
 }
 
-
 footer {
     background-color: #512928;
 }
@@ -154,20 +163,8 @@ footer {
 
 .tracking {
     background-color: #acb5c2;
-}
-
-.tracking form {
-	width: auto;
-}
-
-input[type=search] {
-    float: right;
-    color: #000000;
-    width: 100%;
-    padding-left: 8px;
-    border-radius: 2px;
-    font-size: 18px;
-    border: none;
+	display: flex;
+	margin: auto;
 }
 
   form ::placeholder {
@@ -179,17 +176,79 @@ input[type=search] {
     width: 100%;
     object-fit: contain;
 }
+
+.business-account h3, .home-about-us h3 {
+	color:#42476c;
+	text-align: center;
+}
+
+.business-account h3, .home-about-us p {
+	text-align: center;
+}
+
+.business-account button, .home-about-us  button {
+	display: flex;
+	margin: auto;
+	margin-top: 1rem;
+}
+
+.mission h4 {
+	text-align: center;
+}
 /* About */ 
 
 .meet-the-team-container {
     background-color: #db6d40;
     color: white;
 }
+.meet-the-team h3{
+	padding-left: 1rem;
+}
+
+.meet-the-team p {
+	padding-left: 1rem;
+	padding-bottom: 3rem;
+}
+
+.about-header-image {
+	background-image:url(../images/accepting-package-at-door-640_x_426.jpg);
+    background-size: cover;
+	text-align: center;
+	color: white ;
+	padding: 8rem;
+}
+
+.meet-the-team {
+	background-color: rgba(172, 181, 194, 0.2);
+}
 
 
 /* Contact */
 
-/* Carousel styling source: */
+.contact-header-image {
+	background-image:url(../images/ottawa-parliament-640_x_378.jpg);
+    background-size: cover;
+	text-align: center;
+	color: white ;
+	padding: 8rem;
+}
+
+.contact-page h3 {
+	color: #42476c;
+}
+.contact-page p, h4{
+	margin-top: .75rem;
+}
+
+.contact-page {
+	background-color: rgba(172, 181, 194, 0.2);
+}
+
+.contact-page form {
+	margin-top: 1.5rem;
+}
+
+/* Carousel */
 
 /* =====================
 Code source: "A CSS-only Carousel Slider", Christian Schaefer https://codepen.io/Schepp/pen/WNbQByE
