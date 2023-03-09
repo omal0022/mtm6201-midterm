@@ -57,8 +57,8 @@ header img {
 	height: 150px;
 	width: 100%;
 	margin: auto;
-
 }
+
 nav a{
 	font-family: "rift-soft", sans-serif;
 	font-weight: 500;
@@ -94,7 +94,7 @@ body h2 {
 	padding-top: 1.5rem;
 }
 
-body h4 {
+h4 {
 	font-family: "pill-gothic-600mg", sans-serif;
 	font-weight: 300;
 	font-style: normal;
@@ -106,7 +106,8 @@ body p {
 	font-weight: 400;
 	font-style: italic;
 	line-height: 1.3;
-	font-size: 1.1rem;
+	font-size: 1rem;
+	margin-top: 1rem;
 }
 
 button {
@@ -117,16 +118,15 @@ button {
 	color: white;
 	font-family:"rift-soft", sans-serif;
 	font-weight: 500;
-	font-style: italic;
 }
 
-.btn-text {
-	transform: skew(15deg, 0);
+.home-about-us a {
+	text-decoration: none;
 }
-
 nav {
 	background-color: #42476c;
 }
+
 nav ul {
 	display: flex;
     flex-direction: row;
@@ -161,13 +161,79 @@ footer {
 
 /* Home */
 
+.tracking form {
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	margin: auto;
+	transform: skew(-15deg, 0);
+}
+
+.tracking .container {
+	width: 100%;
+}
+
+input[type=text]{
+	width: 100%;
+	display: flex;
+	border: none;
+	font-family: "rift-soft", sans-serif;
+	font-weight: 400;
+	font-style: italic;
+	padding-top:1rem;
+	padding-bottom: .25rem;
+	padding-left: .5rem;
+  }
+
+  input[type=email]{
+	width: 100%;
+	display: flex;
+	border: none;
+	font-family: "rift-soft", sans-serif;
+	font-weight: 400;
+	font-style: italic;
+	padding-top:1rem;
+	padding-bottom: .25rem;
+	padding-left: .5rem;
+  }
+
+ input[type=textarea] {
+	width: 100%;
+	display: flex;
+	border: none;
+	font-family: "rift-soft", sans-serif;
+	font-weight: 400;
+	font-style: italic;
+	padding-top:.5rem;
+	padding-bottom: 7rem;
+	padding-left: .5rem;
+  }
+
+  input[type=submit] {
+	background-color:#db6d40;
+	color: white;
+	text-align: center;
+	padding: .5rem 1.5rem;
+	border: none;
+	margin-left: .3rem;
+	font-family: "rift-soft", sans-serif;
+	font-weight: 500;
+	font-style: normal;
+  }
+
+  .contact-form input[type=submit] {
+	padding: .5rem 2rem;
+	font-style: italic;
+  }
+
+
 .tracking {
     background-color: #acb5c2;
 	display: flex;
 	margin: auto;
 }
 
-  form ::placeholder {
+form ::placeholder {
     color:#000000;
     opacity: .7;
 }
@@ -182,7 +248,7 @@ footer {
 	text-align: center;
 }
 
-.business-account h3, .home-about-us p {
+.business-account p, .home-about-us p {
 	text-align: center;
 }
 
@@ -215,13 +281,14 @@ footer {
     background-size: cover;
 	text-align: center;
 	color: white ;
-	padding: 8rem;
+	padding-top: 8rem;
+	padding-bottom: 8rem;
+	
 }
 
 .meet-the-team {
 	background-color: rgba(172, 181, 194, 0.2);
 }
-
 
 /* Contact */
 
@@ -230,7 +297,8 @@ footer {
     background-size: cover;
 	text-align: center;
 	color: white ;
-	padding: 8rem;
+	padding-top: 8rem;
+	padding-bottom: 8rem;
 }
 
 .contact-page h3 {
@@ -238,6 +306,9 @@ footer {
 }
 .contact-page p, h4{
 	margin-top: .75rem;
+}
+.contact-page h4 {
+line-height: normal;
 }
 
 .contact-page {
@@ -333,6 +404,7 @@ Code source: "A CSS-only Carousel Slider", Christian Schaefer https://codepen.io
 	padding-top: 75%;
 	filter: drop-shadow(0 0 10px #0003);
 	perspective: 100px;
+	margin-bottom: 1rem;
   }
   
   .carousel__viewport {
