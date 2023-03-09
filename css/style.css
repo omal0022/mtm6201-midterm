@@ -216,6 +216,7 @@ input[type=text]{
 	text-align: center;
 	padding: .5rem 2rem;
 	border: none;
+	border-radius: 0;
 	margin-left: .3rem;
 	font-family: "rift-soft", sans-serif;
 	font-weight: 500;
@@ -225,8 +226,8 @@ input[type=text]{
   .contact-form input[type=submit] {
 	padding: .5rem 2rem;
 	font-style: italic;
+	border-radius: 0;
   }
-
 
 .tracking {
     background-color: #acb5c2;
