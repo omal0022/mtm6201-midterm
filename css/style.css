@@ -120,6 +120,11 @@ button {
 	font-weight: 500;
 }
 
+button:hover {
+	opacity: 0.7;
+	scale: 1.1;
+  }
+
 .home-about-us a {
 	text-decoration: none;
 }
@@ -148,10 +153,6 @@ nav a:visited {
 .container {
     padding: 1.5rem;
 	width: auto;
-}
-
-footer {
-    background-color: #512928;
 }
 
 .mission, .about-history, .mission-vision {
@@ -213,7 +214,7 @@ input[type=text]{
 	background-color:#db6d40;
 	color: white;
 	text-align: center;
-	padding: .5rem 1.5rem;
+	padding: .5rem 2rem;
 	border: none;
 	margin-left: .3rem;
 	font-family: "rift-soft", sans-serif;
@@ -263,6 +264,11 @@ form ::placeholder {
 }
 /* About */ 
 
+.about-history {
+	text-align: center;
+	padding: 1rem 1rem;
+}
+
 .meet-the-team-container {
     background-color: #db6d40;
     color: white;
@@ -283,12 +289,8 @@ form ::placeholder {
 	color: white ;
 	padding-top: 8rem;
 	padding-bottom: 8rem;
-	
 }
 
-.meet-the-team {
-	background-color: rgba(172, 181, 194, 0.2);
-}
 
 /* Contact */
 
@@ -311,7 +313,7 @@ form ::placeholder {
 line-height: normal;
 }
 
-.contact-page {
+main, .contact-page, .meet-the-team {
 	background-color: rgba(172, 181, 194, 0.2);
 }
 
@@ -404,7 +406,6 @@ Code source: "A CSS-only Carousel Slider", Christian Schaefer https://codepen.io
 	padding-top: 75%;
 	filter: drop-shadow(0 0 10px #0003);
 	perspective: 100px;
-	margin-bottom: 1rem;
   }
   
   .carousel__viewport {
@@ -563,6 +564,10 @@ Code source: "A CSS-only Carousel Slider", Christian Schaefer https://codepen.io
   
 
 /* Footer */
+
+footer {
+    background-color: #512928;
+}
 
 footer ul li a {
 	color: white;
