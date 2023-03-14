@@ -21,7 +21,7 @@
     <header class="header">
         <div class="nav-logo">
         <img src="images/BackboneDistributionLogo.svg" alt="Backbone Distributions logo" width="250">
-            <nav role="navigation" id="main-nav">
+            <nav id="main-nav">
                 <ul>
                     <li class="current"><a href="#">Home</a></li>
                     <li><a href="about.html">About Us</a></li>
@@ -37,7 +37,7 @@
         </div>
     </div>
     <!-- Tracking -->
-    <section class="tracking-section">
+    <div class="tracking-section">
         <div class="tracking container">
             <form>
                 <input type="text" placeholder="Enter Tracking #">
@@ -45,30 +45,24 @@
             </form>
             </div> <!-- end container -->
         </div>
-    </section>
     </header>
    
-    <main role="main" id="main">
+    <main id="main">
     <!-- Business Account -->
         <div class="container">
             <section class="business-account">
                 <div class="business-image">
                     <picture>
-                        <source
-                          srcset="images/small-business-packages-1920_x_1280.jpg "
-                          media="(min-width:760px)"
-                        />
-                      <source
-                          srcset="images/small-business-packages-1280_x_853.jpg,
-                          images/small-business-packages-1920_x_1280.jpg 2x"
-                          media="(min-width:760px)"
-                        />
-                        <source
-                          srcset="images/small-business-packages-640_x_426.jpg,
-                          images/small-business-packages-1280_x_853.jpg 2x"
-                          media="(min-width:320px)"
-                        />
-                        <img src="images/small-business-packages-640_x_426.jpg" alt="small business owner packing items to ship" />
+                        <source srcset="images/small-business-packages-1920_x_1280.jpg"
+                        media="(min-width:760px)">
+                        <source srcset="images/small-business-packages-1280_x_853.jpg,
+                        images/small-business-packages-1920_x_1280.jpg 2x"
+                        media="(min-width:760px)">
+                        <source srcset="images/small-business-packages-640_x_426.jpg,
+                        images/small-business-packages-1280_x_853.jpg 2x"
+                        media="(min-width:320px)">
+                        <img src="images/small-business-packages-640_x_426.jpg"
+                        alt="small business owner packing items to ship">
                 </picture>
                 </div>
                 <div class="business-content">
@@ -92,17 +86,14 @@
         <section class="home-about-us">
             <div class="fleet-image">
                 <picture>
-                    <source
-                        srcset="images/delivery-fleet-1280_x_853.jpg,
-                        images/delivery-fleet-1920_x_1280.jpg 2x"
-                        media="(min-width:760px)"
-                      />
-                      <source
-                        srcset="images/delivery-fleet-640_x_426.jpg,
-                        images/delivery-fleet-1280_x_853.jpg 2x"
-                        media="(min-width:320px)"
-                      />
-                      <img src="images/delivery-fleet-640_x_426.jpg" alt="image of three delivery trucks parked in a row" />
+                    <source srcset="images/delivery-fleet-1280_x_853.jpg,
+                    images/delivery-fleet-1920_x_1280.jpg 2x"
+                    media="(min-width:760px)">
+                    <source srcset="images/delivery-fleet-640_x_426.jpg,
+                    images/delivery-fleet-1280_x_853.jpg 2x"
+                    media="(min-width:320px)">
+                    <img src="images/delivery-fleet-640_x_426.jpg"
+                    alt="image of three delivery trucks parked in a row">
               </picture>
             </div>
             <div class="about-us-content">
@@ -163,7 +154,7 @@
 </div>
 
     </main>
-    <footer role="contentinfo" class="site-footer">
+    <footer class="site-footer">
         <div class="container">
             <ul>
                 <li class="current"><a href="#">Home</a></li>
