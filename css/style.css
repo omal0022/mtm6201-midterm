@@ -197,8 +197,6 @@ video {
 
 .video {
 	background-color: #acb5c2;
-	background-image:url(../images/making-delivery-slo-mo.mov);
-    background-size: cover;
 }
 
 .tracking form {
@@ -275,6 +273,10 @@ form .tracking {
 	margin: auto;
 }
 
+.tracking form {
+	max-width: 400px;
+}
+
 form ::placeholder {
     color:#000000;
     opacity: .7;
@@ -326,8 +328,13 @@ form ::placeholder {
 .about-header-image {
 	background-image:url(../images/accepting-package-at-door-640_x_426.jpg);
     background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	align-items: center;
 	text-align: center;
 	color: white ;
+	padding-top: 8rem;
+	padding-bottom: 8rem;
 }
 
 
@@ -336,6 +343,9 @@ form ::placeholder {
 .contact-header-image {
 	background-image:url(../images/ottawa-parliament-640_x_378.jpg);
     background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	align-items: center;
 	text-align: center;
 	color: white ;
 	padding-top: 8rem;
@@ -675,10 +685,20 @@ footer ul li a {
 		margin-left: auto;
 	}
 
-	.video-container{
+	.video-container, .about-header-image, .contact-header-image{
 		width: 706px;
         margin: 0 auto;
     }
+
+	.carousel {
+		width: 706px;
+		margin: auto;
+		padding:250px;
+	}
+
+	.carousel__viewport {
+		height:500px;
+	}
 
 	.nav-logo {
 		display: grid;
@@ -699,7 +719,9 @@ footer ul li a {
 /* ABOVE 1200px */
 @media screen and (min-width: 1200px) {
 
-
+	.container {
+		width: 1200px;
+	}
 
 .container .business-account, .container .home-about-us{
 	display: grid;
