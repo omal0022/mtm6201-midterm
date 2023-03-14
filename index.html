@@ -37,13 +37,15 @@
         </div>
     </div>
     <!-- Tracking -->
-    <div class="tracking container">
-        <form>
-            <input type="text" placeholder="Enter Tracking #">
-            <input type="submit" value="Track">
-        </form>
-        </div> <!-- end container -->
-    </div>
+    <section class="tracking-section">
+        <div class="tracking container">
+            <form>
+                <input type="text" placeholder="Enter Tracking #">
+                <input type="submit" value="Track">
+            </form>
+            </div> <!-- end container -->
+        </div>
+    </section>
     </header>
    
     <main role="main" id="main">
@@ -51,7 +53,23 @@
         <div class="container">
             <section class="business-account">
                 <div class="business-image">
-                    <img src="images/small-business-packages-640_x_426.jpg" alt="small business owner packing items to ship">
+                    <picture>
+                        <source
+                          srcset="images/small-business-packages-1920_x_1280.jpg "
+                          media="(min-width:760px)"
+                        />
+                      <source
+                          srcset="images/small-business-packages-1280_x_853.jpg,
+                          images/small-business-packages-1920_x_1280.jpg 2x"
+                          media="(min-width:760px)"
+                        />
+                        <source
+                          srcset="images/small-business-packages-640_x_426.jpg,
+                          images/small-business-packages-1280_x_853.jpg 2x"
+                          media="(min-width:320px)"
+                        />
+                        <img src="images/small-business-packages-640_x_426.jpg" alt="small business owner packing items to ship" />
+                </picture>
                 </div>
                 <div class="business-content">
                     <h3>Are you a small business owner? Sign up for a Backbone Business Account today and start saving!</h3>
@@ -73,7 +91,19 @@
     <div class="container">
         <section class="home-about-us">
             <div class="fleet-image">
-            <img src="images/delivery-fleet-640_x_426.jpg" alt="image of three delivery trucks parked in a row">
+                <picture>
+                    <source
+                        srcset="images/delivery-fleet-1280_x_853.jpg,
+                        images/delivery-fleet-1920_x_1280.jpg 2x"
+                        media="(min-width:760px)"
+                      />
+                      <source
+                        srcset="images/delivery-fleet-640_x_426.jpg,
+                        images/delivery-fleet-1280_x_853.jpg 2x"
+                        media="(min-width:320px)"
+                      />
+                      <img src="images/delivery-fleet-640_x_426.jpg" alt="image of three delivery trucks parked in a row" />
+              </picture>
             </div>
             <div class="about-us-content">
                 <h3>We deliver anything and everything you need as soon as possible.</h3>
@@ -88,7 +118,7 @@
     <!-- Image Carousel -->
         
 <!-- ***** Code source: "A CSS-only Carousel Slider", Christian Schaefer https://codepen.io/Schepp/pen/WNbQByE ***** -->
-
+<div class="carousel-background">
     <section class="carousel" aria-label="Gallery">
       <ol class="carousel__viewport">
         <li id="carousel__slide1"
@@ -129,28 +159,8 @@
              class="carousel__next">Go to first slide</a>
         </li>
       </ol>
-      <aside class="carousel__navigation">
-        <ol class="carousel__navigation-list">
-          <li class="carousel__navigation-item">
-            <a href="#carousel__slide1"
-               class="carousel__navigation-button">Go to slide 1</a>
-          </li>
-          <li class="carousel__navigation-item">
-            <a href="#carousel__slide2"
-               class="carousel__navigation-button">Go to slide 2</a>
-          </li>
-          <li class="carousel__navigation-item">
-            <a href="#carousel__slide3"
-               class="carousel__navigation-button">Go to slide 3</a>
-          </li>
-          <li class="carousel__navigation-item">
-            <a href="#carousel__slide4"
-               class="carousel__navigation-button">Go to slide 4</a>
-          </li>
-        </ol>
-      </aside>
     </section>
-      
+</div>
 
     </main>
     <footer role="contentinfo" class="site-footer">

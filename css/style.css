@@ -209,7 +209,6 @@ video {
 
 form .tracking {
 	width: 100%;
-
 }
 
  input[type=text]{
@@ -268,7 +267,6 @@ form .tracking {
   }
 
 .tracking {
-    background-color: #acb5c2;
 	display: flex;
 	margin: auto;
 }
@@ -277,6 +275,9 @@ form .tracking {
 	max-width: 400px;
 }
 
+.tracking-section {
+	background-color: #acb5c2;
+}
 form ::placeholder {
     color:#000000;
     opacity: .7;
@@ -336,7 +337,6 @@ form ::placeholder {
 	padding-top: 8rem;
 	padding-bottom: 8rem;
 }
-
 
 /* Contact */
 
@@ -553,7 +553,7 @@ Code source: "A CSS-only Carousel Slider", Christian Schaefer https://codepen.io
 	display: inline-block;
 	width: 1.5rem;
 	height: 1.5rem;
-	background-color:#42476c;
+	background-color:white;
 	background-clip: content-box;
 	border: 0.25rem solid transparent;
 	border-radius: 50%;
@@ -592,7 +592,7 @@ Code source: "A CSS-only Carousel Slider", Christian Schaefer https://codepen.io
   .carousel::after {
 	content: '';
 	z-index: 1;
-	background-color: #333;
+	background-color: #42476c;
 	background-size: 1.5rem 1.5rem;
 	background-repeat: no-repeat;
 	background-position: center center;
@@ -611,7 +611,10 @@ Code source: "A CSS-only Carousel Slider", Christian Schaefer https://codepen.io
 	background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpolygon points='100,50 20,100 20,0' fill='%23fff'/%3E%3C/svg%3E");
   }
   
-
+  .carousel-background {
+	background-color: #db6d40;
+	padding-top: 1rem;
+}
 /* Footer */
 
 footer {
@@ -649,7 +652,7 @@ footer ul li a {
 
   @media screen and (min-width: 760px) {
 
-    .container, .nav-logo {
+    .container {
         width: 706px;
         margin: 0 auto;
     }
@@ -659,6 +662,7 @@ footer ul li a {
 		display: flex;
 		justify-content: flex-end;
 		align-items: flex-end;
+		padding-right: 2rem;
 	}
 
 	nav ul {
@@ -682,10 +686,9 @@ footer ul li a {
 	nav .current {
 		border-bottom: 2px solid #db6d40;
 		padding-bottom: 3px;
-		margin-left: auto;
 	}
 
-	.video-container, .about-header-image, .contact-header-image{
+	 .about-header-image, .contact-header-image{
 		width: 706px;
         margin: 0 auto;
     }
@@ -706,6 +709,7 @@ footer ul li a {
 	}
 
 	.about-header-image {
+		width: 100%;
 		background-repeat: no-repeat;
 		background-position: center;
 		background-size: cover;
@@ -713,54 +717,145 @@ footer ul li a {
 		padding-top: 10rem;
 		padding-bottom: 10rem;
 	}
-	}
 
 /* DESKTOP STYLES */
 /* ABOVE 1200px */
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1280px) {
 
-	.container {
-		width: 1200px;
-	}
+h1 {
+	font-size:5rem;
+}
 
-.container .business-account, .container .home-about-us{
+body h2{
+	font-size: 4rem;
+}
+
+h3 {
+	font-size: 3rem;
+}
+
+h4 {
+	font-size: 1.5rem;
+}
+
+body p {
+	font-size: 1.5rem;
+}
+
+nav a{
+	font-size: 2rem;
+}
+
+footer ul li a {
+	font-size: 1.5rem;
+}
+
+.container {
+	width: 1200px;
+}
+
+.tracking form {
+	max-width: 600px;
+}
+
+.tracking input[type=text]{
+	font-size: 1.25rem;
+	padding-top:1.5rem;
+	padding-bottom: .25rem;
+	padding-left: .5rem;
+  }
+
+  .tracking input[type=submit] {
+	padding-left: 2rem;
+	padding-right: 2rem;
+	font-size: 1.25rem;
+  }
+.container .business-account {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	grid-template-rows: auto;
-	padding-top: none;
 }
 
-.business-account h3, .business-account p, .home-about-us h3, .home-about-us p{
-	padding-top: none;
+.business-account h3, .business-account p {
 	padding-left: 1.5rem;
 	text-align: left;
 }
 
-.business-account button, .home-about-us  button {
+.business-account h3{
+	margin-top: 0px;
+	margin-bottom: auto;
+}
+
+.business-account button{
 	display: flex;
 	margin-left:1.5rem;
 	margin-top: 1rem;
+	font-size: 1.25rem;
+}
+.container .home-about-us {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr;
+	align-content: top;
+	align-items: top;
 }
 
+ .about-us-content {
+	grid-column:1;
+	grid-row: 1;
+ }
+
+.home-about-us h3, .home-about-us p {
+	padding-right: 1.5rem;
+	text-align: right;
+	margin-top: 0px;
+	margin-bottom: auto;
+}
+.home-about-us h3{
+	margin-top: 0px;
+	margin-bottom: auto;
+}
+.home-about-us  button {
+	display: flex;
+	margin-right:1.5rem;
+	margin-top: 1rem;
+	font-size: 1.25rem;
+}
+
+.carousel__viewport {
+	width:100%;
+}
 /* About Page */
 
 .about-header-image {
+	width: 100%;
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
 	align-items: center;
-	padding-top: 10rem;
-	padding-bottom: 10rem;
+	padding-top: 20rem;
+	padding-bottom: 20rem;
 }
 
 /* Contact Page */
 
 .contact-header-image {
+	width: 100%;
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
 	align-items: center;
-	padding-top: 10rem;
-	padding-bottom: 10rem;
+	padding-top: 20rem;
+	padding-bottom: 20rem;
+}
+
+.contact-form {
+	max-width: 700px;
+}
+
+.contact-form input[type=submit]{
+	padding-left: 2rem;
+	padding-right: 2rem;
+	font-size: 1.25rem;
 }
 }
