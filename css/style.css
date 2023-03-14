@@ -67,6 +67,12 @@ nav a{
 	font-size: 1.5rem;
 }
 
+nav li a:hover {
+	scale: 1.1;
+	color: #db6d40;
+}
+
+
 body h1, h3 {
 	font-family: "condor-condensed", sans-serif;
 	font-weight: 700;
@@ -128,7 +134,7 @@ button:hover {
 .home-about-us a {
 	text-decoration: none;
 }
-nav {
+#main-nav {
 	background-color: #42476c;
 }
 
@@ -150,8 +156,31 @@ nav a:visited {
     text-align: center;
 }
 
+nav .current {
+	border-bottom: 2px solid #fff;
+	padding-bottom: 3px;
+}
+
+.skip-links{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+  }
+  .skip-links a{
+	position: absolute;
+	top: -3em;
+	background-color: black;
+	color:white;
+	padding: .5em 1em;
+	font-weight: bold;
+  }
+  
+  .skip-links a:focus{
+	top: 0;
+  }
+
 .container {
-    padding: 1.5rem;
+    padding:1.5rem;
 	width: auto;
 }
 
@@ -162,6 +191,16 @@ nav a:visited {
 
 /* Home */
 
+video {
+	width: 100%;
+}
+
+.video {
+	background-color: #acb5c2;
+	background-image:url(../images/making-delivery-slo-mo.mov);
+    background-size: cover;
+}
+
 .tracking form {
 	display: flex;
 	flex-direction: row;
@@ -170,11 +209,12 @@ nav a:visited {
 	transform: skew(-15deg, 0);
 }
 
-.tracking .container {
+form .tracking {
 	width: 100%;
+
 }
 
-input[type=text]{
+ input[type=text]{
 	width: 100%;
 	display: flex;
 	border: none;
@@ -198,7 +238,7 @@ input[type=text]{
 	padding-left: .5rem;
   }
 
- input[type=textarea] {
+ input[id=message] {
 	width: 100%;
 	display: flex;
 	border: none;
@@ -288,8 +328,6 @@ form ::placeholder {
     background-size: cover;
 	text-align: center;
 	color: white ;
-	padding-top: 8rem;
-	padding-bottom: 8rem;
 }
 
 
@@ -577,4 +615,130 @@ footer ul li a {
 	font-weight: 100;
 	font-style: normal;
 	line-height: 1.5;
+}
+
+.fa {
+	padding: 20px;
+	text-decoration: none;
+	color: white;
+  }
+
+  .fa:nth-child(1) {
+	padding-left:0;
+  }
+
+  .social-icons {
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	margin: auto;
+
+  }
+
+  /* TABLET STYLES: 760px to 1199px */
+
+  @media screen and (min-width: 760px) {
+
+    .container, .nav-logo {
+        width: 706px;
+        margin: 0 auto;
+    }
+
+	#main-nav {
+		background-color: #fff;
+		display: flex;
+		justify-content: flex-end;
+		align-items: flex-end;
+	}
+
+	nav ul {
+		padding-bottom: 1.5rem;
+		width: 100%;
+		justify-content: flex-end;
+	}
+
+	nav ul li {
+		margin-left: 4rem;
+	}
+	
+	nav a:link,
+	nav a:visited {
+		display: block;
+		color:#42476c;
+		text-decoration: none;
+		text-align: center;
+	}
+
+	nav .current {
+		border-bottom: 2px solid #db6d40;
+		padding-bottom: 3px;
+		margin-left: auto;
+	}
+
+	.video-container{
+		width: 706px;
+        margin: 0 auto;
+    }
+
+	.nav-logo {
+		display: grid;
+		grid-template-columns: 25% 75%;
+	}
+
+	.about-header-image {
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+		align-items: center;
+		padding-top: 10rem;
+		padding-bottom: 10rem;
+	}
+	}
+
+/* DESKTOP STYLES */
+/* ABOVE 1200px */
+@media screen and (min-width: 1200px) {
+
+
+
+.container .business-account, .container .home-about-us{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: auto;
+	padding-top: none;
+}
+
+.business-account h3, .business-account p, .home-about-us h3, .home-about-us p{
+	padding-top: none;
+	padding-left: 1.5rem;
+	text-align: left;
+}
+
+.business-account button, .home-about-us  button {
+	display: flex;
+	margin-left:1.5rem;
+	margin-top: 1rem;
+}
+
+/* About Page */
+
+.about-header-image {
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	align-items: center;
+	padding-top: 10rem;
+	padding-bottom: 10rem;
+}
+
+/* Contact Page */
+
+.contact-header-image {
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	align-items: center;
+	padding-top: 10rem;
+	padding-bottom: 10rem;
+}
 }

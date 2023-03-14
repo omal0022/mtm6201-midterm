@@ -8,10 +8,14 @@
 
     <link href="css/style.css" rel="stylesheet">
     <link rel="stylesheet" href="https://use.typekit.net/bdv3nie.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
 
 </head>
 <body>
     <header>
+    <div class="nav-logo">
         <img src="images/BackboneDistributionLogo.svg" alt="Backbone Distributions logo" width="250">
         <nav>
             <ul>
@@ -21,13 +25,12 @@
             </ul>
         </nav>
     </header>
-
+    </div>
     <main>
-        <div class="contact-header-image">
+        <div class="contact-header-image" id="#contact">
         <h1>Contact Us</h1>
         </div>
-        <div class="tracking">
-            <div class="container">
+        <div class="tracking container">
             <form>
                 <input type="text" placeholder="Enter Tracking #">
                 <input type="submit" value="Track">
@@ -44,7 +47,7 @@
                         <input type="text" id="name" name="name" placeholder="Name"><br>
                         <input type="email" id="email" name="email" placeholder="Email"><br>
                         <input type="text" id="subject" name="subject" placeholder="Subject"><br>
-                        <input type="textarea" id="message" name="message" placeholder="Message"><br>
+                        <input type="text" id="message" name="message" placeholder="Message"><br>
                         <input type="submit" value="Send">
                     </form>
                 </div>
@@ -53,17 +56,23 @@
 
     </main>
 
-    <footer>
+    <footer role="contentinfo" class="site-footer">
         <div class="container">
-            <div class="footer-nav">
             <ul>
-                <li><a href="index.html">Home</a></li>
+                <li class="current"><a href="#">Home</a></li>
                 <li><a href="about.html">About Us</a></li>
-                <li class="current"><a href="#">Contact</a></li>
+                <li><a href="contact.html">Contact</a></li>
                 <li><a href="#">Track a Package</a></li>
                 <li><a href="#">FAQ</a></li>
                 <li><a href="#">Login</a></li>
             </ul>
+            <div class="social-icons">
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-instagram"></a>
+                <a href="#" class="fa fa-twitter"></a>
+                <a href="#" class="fa fa-youtube"></a>
             </div>
         </div> <!-- end container-->
     </footer>
+</body>
+</html> 

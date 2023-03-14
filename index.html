@@ -8,26 +8,36 @@
 
     <link href="css/style.css" rel="stylesheet">
     <link rel="stylesheet" href="https://use.typekit.net/bdv3nie.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 <body>
+    <ul class="skip-links">
+        <li><a href="#main-nav">Skip to main nav</a></li>
+        <li><a href="#main">Skip to main content</a></li>
+        <li><a href="#mission">Skip to mission</a></li>
+      </ul>
     
-    <header>
+    <header class="header">
+        <div class="nav-logo">
         <img src="images/BackboneDistributionLogo.svg" alt="Backbone Distributions logo" width="250">
-            <nav>
+            <nav role="navigation" id="main-nav">
                 <ul>
                     <li class="current"><a href="#">Home</a></li>
                     <li><a href="about.html">About Us</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
-    <div class="video">
-        <!-- <video autoplay muted controls loop>
-        <source src="images/making-delivery-slo-mo.mov" type="video/mp4">
-        </video> -->
+        </div>
+    <div class="video-container">
+        <div class="video">
+            <video autoplay muted controls loop>
+            <!-- <source src="images/making-delivery-slo-mo.mov" type="video/mp4"> -->
+            </video>
+        </div>
     </div>
     <!-- Tracking -->
-    <div class="tracking">
-        <div class="container">
+    <div class="tracking container">
         <form>
             <input type="text" placeholder="Enter Tracking #">
             <input type="submit" value="Track">
@@ -36,23 +46,25 @@
     </div>
     </header>
    
-    <main>
+    <main role="main" id="main">
     <!-- Business Account -->
         <div class="container">
             <section class="business-account">
                 <div class="business-image">
                     <img src="images/small-business-packages-640_x_426.jpg" alt="small business owner packing items to ship">
                 </div>
-                <h3>Are you a small business owner? Sign up for a Backbone Business Account today and start saving!</h3>
-                <p>Get discounts on all shipments woth a small business account, including same-day delivery and scheduled pickups!</p>
-                <div class="btn">
-                    <button class="btn-text">Learn More</button>
+                <div class="business-content">
+                    <h3>Are you a small business owner? Sign up for a Backbone Business Account today and start saving!</h3>
+                    <p>Get discounts on all shipments woth a small business account, including same-day delivery and scheduled pickups!</p>
+                    <div class="btn">
+                        <button class="btn-text">Learn More</button>
+                    </div>
                 </div>
             </section>
         </div>
 
     <!-- Mission -->
-    <section class="mission">
+    <section class="mission" id="mission">
         <div class="container">
             <h4>Backbone Distribution is the greater Ottawa area’s first choice for reliable, affordable and fast deliveries with an emphasis on customer service and community first. </h4>
         </div>
@@ -63,14 +75,13 @@
             <div class="fleet-image">
             <img src="images/delivery-fleet-640_x_426.jpg" alt="image of three delivery trucks parked in a row">
             </div>
-            <h3>We deliver anything and everything you need as soon as possible.</h3>
-                <p>We strive to provide our customers with the care and quality they expect from a small-Town business, in the big city.</p>
-                <a href="about.html">
-                    <div class="btn">
-                        <button class="btn-text">About US</button>
-                    </div>
-                  </a>
-            
+            <div class="about-us-content">
+                <h3>We deliver anything and everything you need as soon as possible.</h3>
+                    <p>We strive to provide our customers with the care and quality they expect from a small-Town business, in the big city.</p>
+                        <div class="btn">
+                            <button class="btn-text">About US</button>
+                        </div>
+            </div>
         </section>    
     </div>
 
@@ -142,7 +153,7 @@
       
 
     </main>
-    <footer>
+    <footer role="contentinfo" class="site-footer">
         <div class="container">
             <ul>
                 <li class="current"><a href="#">Home</a></li>
@@ -152,6 +163,12 @@
                 <li><a href="#">FAQ</a></li>
                 <li><a href="#">Login</a></li>
             </ul>
+           <div class="social-icons">
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-instagram"></a>
+                <a href="#" class="fa fa-twitter"></a>
+                <a href="#" class="fa fa-youtube"></a>
+            </div>
         </div> <!-- end container-->
     </footer>
 
