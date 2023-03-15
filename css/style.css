@@ -327,7 +327,7 @@ form ::placeholder {
 }
 
 .about-header-image {
-	background-image:url(../images/accepting-package-at-door-640_x_426.jpg);
+	background-image:url(../images/about-header-image/accepting-package-at-door-760_x_505.jpg);
     background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -341,7 +341,7 @@ form ::placeholder {
 /* Contact */
 
 .contact-header-image {
-	background-image:url(../images/ottawa-parliament-640_x_378.jpg);
+	background-image:url(../images/contact-header-image/ottawa-parliament-760_x_448.jpg);
     background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -709,14 +709,26 @@ footer ul li a {
 	}
 
 	.about-header-image {
+		background-image:url(../images/about-header-image/accepting-package-at-door-1200_x_799.jpg);
 		width: 100%;
 		background-repeat: no-repeat;
 		background-position: center;
 		background-size: cover;
 		align-items: center;
-		padding-top: 10rem;
-		padding-bottom: 10rem;
+		padding-top: 12rem;
+		padding-bottom: 12rem;
 	}
+	.contact-header-image {
+		background-image:url(../images/contact-header-image/ottawa-parliament-1200_x_708.jpg);
+		width: 100%;
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+		align-items: center;
+		padding-top: 12rem;
+		padding-bottom: 12rem;
+	}
+
 }
 
 /* DESKTOP STYLES */
@@ -745,6 +757,11 @@ body p {
 
 nav a{
 	font-size: 2rem;
+}
+
+header img {
+	height: 200px;
+	margin-left: auto;
 }
 
 footer ul li a {
@@ -827,6 +844,7 @@ footer ul li a {
 /* About Page */
 
 .about-header-image {
+	background-image:url(../images/about-header-image/accepting-package-at-door-1920_x_1279.jpg);
 	width: 100%;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -836,9 +854,21 @@ footer ul li a {
 	padding-bottom: 20rem;
 }
 
+.meet-the-team-container {
+	display: flex;
+	flex-direction: row;
+	background: none;
+}
+
+.sean-bio, .connor-bio, .natalie-bio{
+	margin-right: 1rem;
+	background-color: #db6d40;
+}
+
 /* Contact Page */
 
 .contact-header-image {
+	background-image: url(../images/contact-header-image/ottawa-parliament-1920_x_1134.jpg);
 	width: 100%;
 	background-repeat: no-repeat;
 	background-position: center;
