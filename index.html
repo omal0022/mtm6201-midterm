@@ -12,15 +12,15 @@
 
 </head>
 <body>
-    <ul class="skip-links">
+    <ul class="skip-links"> <!-- Skip links for accessibility -->
         <li><a href="#main-nav">Skip to main nav</a></li>
         <li><a href="#main">Skip to main content</a></li>
         <li><a href="#mission">Skip to mission</a></li>
       </ul>
     
-    <header class="header" role="banner">
+    <header class="header">
         <div class="nav-logo">
-        <img src="images/BackboneDistributionLogo.svg" class="logo" alt="Backbone Distributions logo" width="250">
+        <a href="index.html"><img src="images/BackboneDistributionLogo.svg" alt="Backbone Distributions logo" width="250"></a>
             <nav id="main-nav">
                 <ul>
                     <li class="current"><a href="#">Home</a></li>
@@ -52,33 +52,34 @@
         <div class="container">
             <section class="business-account">
                 <div class="business-image">
-                    <picture>
+                    <picture> <!-- Picture tag was used for responsive images -->
                         <source
                           srcset="images/small-business-packages/small-business-packages-1280_x_853.jpg 1x,
                                   images/small-business-packages/small-business-packages-2560_x_1706.jpg 2x,
                                   images/small-business-packages/small-business-packages-3840_x_2559.jpg 3x"
                           media="(min-width:1280px)"
-                        />
+                        >
                         <source
                         srcset="images/small-business-packages/small-business-packages-960_x_639.jpg 1x,
                                 images/small-business-packages/small-business-packages-1920_x_1279.jpg 2x,
                                 images/small-business-packages/small-business-packages-2880_x_1919.jpg 3x"
                         media="(min-width:960px)"
-                      />
+                      >
                         <source
                         srcset="images/small-business-packages/small-business-packages-720_x_479.jpg 1x,
                                 images/small-business-packages/small-business-packages-1440_x_959.jpg 2x,
                                 images/small-business-packages/small-business-packages-2160_x_1439.jpg 3x"
                         media="(min-width:720px)"
-                      />
+                      >
                         <source
                           srcset="images/small-business-packages/small-business-packages-320_x_213.jpg 1x,
                                   images/small-business-packages/small-business-packages-640_x_426.jpg 2x,
                                   images/small-business-packages/small-business-packages-960_x_639.jpg 3x"
                           media="(min-width:320px)"
-                        />
-                        <img src="images/small-business-packages/small-business-packages-1280_x_853.jpg" alt="small business owner packing items to ship" />
-                </div>
+                        >
+                        <img src="images/small-business-packages/small-business-packages-1280_x_853.jpg" alt="small business owner packing items to ship">
+                        </picture>
+                        </div>
                 <div class="business-content">
                     <h3>Are you a small business owner? Sign up for a Backbone Business Account today and start saving!</h3>
                     <p>Get discounts on all shipments woth a small business account, including same-day delivery and scheduled pickups!</p>
@@ -99,39 +100,40 @@
     <div class="container">
         <section class="home-about-us">
             <div class="fleet-image">
-                <picture>
+                <picture> <!-- Picture tag was used for responsive images -->
                     <source
                       srcset="images/delivery-fleet/delivery-fleet-1280_x_853.jpg 1x,
                               images/delivery-fleet/delivery-fleet-2560_x_1706.jpg 2x,
                               images/delivery-fleet/delivery-fleet-3840_x_2559.jpg 3x"
                       media="(min-width:1280px)"
-                    />
+                    >
                     <source
                     srcset="images/delivery-fleet/delivery-fleet-960_x_639.jpg 1x,
                             images/delivery-fleet/delivery-fleet-1920_x_1279.jpg 2x,
                             images/delivery-fleet/delivery-fleet-2880_x_1919.jpg 3x"
                     media="(min-width:960px)"
-                  />
+                  >
                     <source
                     srcset="images/delivery-fleet/delivery-fleet-720_x_479.jpg 1x,
                             images/delivery-fleet/delivery-fleets-1440_x_959.jpg 2x,
                             images/delivery-fleet/delivery-fleet-2160_x_1439.jpg 3x"
                     media="(min-width:720px)"
-                  />
+                  >
                     <source
                       srcset="images/delivery-fleet/delivery-fleet-320_x_213.jpg 1x,
                               images/delivery-fleet/delivery-fleet-640_x_426.jpg 2x,
                               images/delivery-fleet/delivery-fleet-960_x_639.jpg 3x"
                       media="(min-width:320px)"
-                    />
-                    <img src="images/delivery-fleet/delivery-fleet-1280_x_853.jpg" alt="image of three delivery trucks parked in a row" />
+                    >
+                    <img src="images/delivery-fleet/delivery-fleet-1280_x_853.jpg" alt="image of three delivery trucks parked in a row">
+                </picture>
             </div>
             <div class="about-us-content">
                 <h3>We deliver anything and everything you need as soon as possible.</h3>
                     <p>We strive to provide our customers with the care and quality they expect from a small-Town business, in the big city.</p>
-                        <div class="btn">
-                            <button class="btn-text">About US</button>
-                        </div>
+                <div class="btn">
+                    <button class="btn-text">About US</button>
+                </div>
             </div>
         </section>    
     </div>
@@ -184,7 +186,7 @@
 </div>
 
     </main>
-    <footer class="site-footer" role="contentinfo">
+    <footer class="site-footer">
         <div class="container">
             <ul>
                 <li class="current"><a href="#">Home</a></li>
@@ -200,7 +202,10 @@
                 <a href="#" class="fa fa-twitter"></a>
                 <a href="#" class="fa fa-youtube"></a>
             </div>
+            <div class="copyright">&copy; 2023 Backbone Distributions 
+                <a href="#top">Back to Top</a>
         </div> <!-- end container-->
+        </div>
     </footer>
 
 </body>

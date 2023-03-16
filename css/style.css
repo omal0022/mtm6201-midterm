@@ -51,7 +51,8 @@ table {
           My Styles
 ============================ */
 
-/* General */
+/* ====== General ====== */
+
 header img {
 	padding: 1rem;
 	height: 150px;
@@ -189,7 +190,7 @@ nav .current {
     color: white;
 }
 
-/* Home */
+/* ====== Home Page ====== */
 
 video {
 	width: 100%;
@@ -306,7 +307,8 @@ form ::placeholder {
 .mission h4 {
 	text-align: center;
 }
-/* About */ 
+
+/* ====== About Page ======  */ 
 
 .about-history {
 	text-align: center;
@@ -317,7 +319,7 @@ form ::placeholder {
     background-color: #db6d40;
     color: white;
 }
-
+ 
 [itemprop="name"]{
 	font-family: "condor-condensed", sans-serif;
 	font-size: 3rem;
@@ -337,7 +339,6 @@ form ::placeholder {
 
 .sean-text, .connor-text, .natalie-text {
 	padding: 1rem 1rem 3rem 1rem;
-
 }
 
 .about-header-image {
@@ -352,7 +353,7 @@ form ::placeholder {
 	padding-bottom: 8rem;
 }
 
-/* Contact */
+/* ====== Contact Page ======  */
 
 .contact-header-image {
 	background-image:url(../images/contact-header-image/ottawa-parliament-760_x_448.jpg);
@@ -384,7 +385,7 @@ main, .contact-page, .meet-the-team {
 	margin-top: 1.5rem;
 }
 
-/* Carousel */
+/* ====== Carousel ====== */
 
 /* =====================
 Code source: "A CSS-only Carousel Slider", Christian Schaefer https://codepen.io/Schepp/pen/WNbQByE
@@ -624,12 +625,15 @@ Code source: "A CSS-only Carousel Slider", Christian Schaefer https://codepen.io
   .carousel::after {
 	background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpolygon points='100,50 20,100 20,0' fill='%23fff'/%3E%3C/svg%3E");
   }
+
+  /* End of carousel code from Christian Schaefer https://codepen.io/Schepp/pen/WNbQByE Some alterations were made  */
   
   .carousel-background {
 	background-color: #db6d40;
 	padding-top: 1rem;
 }
-/* Footer */
+
+/* ====== Footer ======= */
 
 footer {
     background-color: #512928;
@@ -659,10 +663,20 @@ footer ul li a {
 	flex-direction: row;
 	width: 100%;
 	margin: auto;
-
   }
 
-  /* TABLET STYLES: 760px to 1199px */
+  .copyright {
+	color: #fff;
+	font-family: "pill-gothic-600mg", sans-serif;
+	padding-top: 3rem;
+  }
+
+  .copyright a {
+	color: #fff;
+	padding-left: 3rem;
+  }
+
+  /* =========== TABLET STYLES: 760px to 1279px ============ */
 
   @media screen and (min-width: 760px) {
 
@@ -722,6 +736,7 @@ footer ul li a {
 		grid-template-columns: 25% 75%;
 	}
 
+	/* Background image used so text will show on top */
 	.about-header-image {
 		background-image:url(../images/about-header-image/accepting-package-at-door-1200_x_799.jpg);
 		width: 100%;
@@ -764,10 +779,11 @@ footer ul li a {
 
 }
 
-/* DESKTOP STYLES */
-/* ABOVE 1200px */
+/* =========== DESKTOP STYLES: ABOVE 1280px ============= */
+
 @media screen and (min-width: 1280px) {
 
+/* larger fonts for larger screens */
 h1 {
 	font-size:5rem;
 }
@@ -821,6 +837,9 @@ footer ul li a {
 	padding-right: 2rem;
 	font-size: 1.25rem;
   }
+
+  /* grid used to show items side by side on larger screens */
+
 .container .business-account {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
@@ -843,6 +862,8 @@ footer ul li a {
 	margin-top: 1rem;
 	font-size: 1.25rem;
 }
+
+ /* grid used to show items side by side on larger screens */
 .container .home-about-us {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
@@ -874,7 +895,7 @@ footer ul li a {
 .carousel__viewport {
 	width:100%;
 }
-/* About Page */
+/* ====== About Page ====== */
 
 .about-header-image {
 	background-image:url(../images/about-header-image/accepting-package-at-door-1920_x_1279.jpg);
@@ -887,6 +908,7 @@ footer ul li a {
 	padding-bottom: 20rem;
 }
 
+/* Flex used to show team members side by side on larger screens */
 .meet-the-team-container {
 	display: flex;
 	flex-direction: row;
@@ -904,7 +926,7 @@ footer ul li a {
 [itemprop="jobTitle"]{
 	font-size: 1.5rem;
 }
-/* Contact Page */
+/* ====== Contact Page ====== */
 
 .contact-header-image {
 	background-image: url(../images/contact-header-image/ottawa-parliament-1920_x_1134.jpg);
@@ -917,6 +939,7 @@ footer ul li a {
 	padding-bottom: 20rem;
 }
 
+/* max-width used so the form doesn't stretch across thw whole screen */
 .contact-form {
 	max-width: 700px;
 }
