@@ -317,13 +317,27 @@ form ::placeholder {
     background-color: #db6d40;
     color: white;
 }
-.meet-the-team h3{
-	padding-left: 1rem;
+
+[itemprop="name"]{
+	font-family: "condor-condensed", sans-serif;
+	font-size: 3rem;
+	font-weight: 700;
+	font-style: italic;
+	letter-spacing: 1.5px;
 }
 
-.meet-the-team p {
-	padding-left: 1rem;
-	padding-bottom: 3rem;
+[itemprop="jobTitle"]{
+	font-family: "rift-soft", sans-serif;
+	font-weight: 400;
+	font-style: italic;
+	line-height: 1.3;
+	font-size: 1.5rem;
+	margin-top: 1rem;
+}
+
+.sean-text, .connor-text, .natalie-text {
+	padding: 1rem 1rem 3rem 1rem;
+
 }
 
 .about-header-image {
@@ -718,6 +732,25 @@ footer ul li a {
 		padding-top: 12rem;
 		padding-bottom: 12rem;
 	}
+
+	.meet-the-team-container {
+		display: flex;
+		flex-direction: row;
+		background: none;
+	}
+
+	[itemprop="name"]{
+		font-size: 1.5rem;
+	}
+	
+	[itemprop="jobTitle"]{
+		font-size: 1rem;
+	}
+	.sean-bio, .connor-bio, .natalie-bio{
+		margin-right: 1rem;
+		background-color: #db6d40;
+	}
+	
 	.contact-header-image {
 		background-image:url(../images/contact-header-image/ottawa-parliament-1200_x_708.jpg);
 		width: 100%;
@@ -864,7 +897,13 @@ footer ul li a {
 	margin-right: 1rem;
 	background-color: #db6d40;
 }
+[itemprop="name"]{
+	font-size: 3rem;
+}
 
+[itemprop="jobTitle"]{
+	font-size: 1.5rem;
+}
 /* Contact Page */
 
 .contact-header-image {

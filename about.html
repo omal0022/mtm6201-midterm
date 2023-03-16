@@ -13,7 +13,12 @@
 </head>
 
 <body>
-    <header>
+    <ul class="skip-links">
+        <li><a href="#history">Skip to History</a></li>
+        <li><a href="#meet-the-team">Skip to Meet the Team</a></li>
+        <li><a href="#mission">Skip to Mission</a></li>
+      </ul>
+    <header role="banner">
         <div class="nav-logo">
             <img src="images/BackboneDistributionLogo.svg" alt="Backbone Distributions logo" width="250">
                 <nav id="main-nav">
@@ -30,7 +35,7 @@
         <div class="about-header-image">
             <h1>About Us</h1>
         </div>
-        <section class="about-history">
+        <section class="about-history" id="history">
             <div class="container">
                 <h4>Backbone Distributions was founded by brothers Connor and Sean in 2017 when neither of them could find a reliable delivery service that ticked all the boxes. Growing up in Ottawa, Sean and Connor wanted to make sure that they serve their community first and continue to provide small-town service in the Big City today.</h4>
 
@@ -43,22 +48,28 @@
                     <div class="sean-bio">
                         <img src="images/stevens-sean-portrait-640_x_640.jpeg" alt="partrait of a man in a blue shirt">
                         <div class="sean-text">
-                            <h3>Sean Stevens</h3>
-                            <p>Co-founder and CEO</p>
+                            <ul itemscope itemtype="https://schema.org/Person">
+                                <li itemprop="name">Sean Stevens</li>  
+                                <li itemprop="jobTitle">C0-founder and CEO</li>
+                            </ul>
                         </div>
                     </div> <!--end sean-bio-->
                     <div class="connor-bio">
                         <img src="images/stevens-connor-portrait-640_x_640.jpeg" alt="portrait of a man in a blue shirt with glasses">
                         <div class="connor-text">
-                            <h3>Connor Stevens</h3>
-                            <p>Co-founder and CFO</p>
+                            <ul itemscope itemtype="https://schema.org/Person">
+                                <li itemprop="name">Connor Stevens</li>  
+                                <li itemprop="jobTitle">C0-founder and CFO</li>
+                            </ul>
                         </div>
                     </div> <!--end connor-bio-->
                     <div class="natalie-bio">
                         <img src="images/ferris-natalie-portrait-640_x_640.jpg" alt="portrait of a woman in a blue shirt polka dot shirt">
                         <div class="natalie-text">
-                            <h3>Natalie Ferris</h3>
-                            <p>Marketing Director</p>
+                            <ul itemscope itemtype="https://schema.org/Person">
+                                <li itemprop="name">Natalie Ferris</li>  
+                                <li itemprop="jobTitle">Marketing Director</li>
+                            </ul>
                         </div>
                     </div> <!--end natalie-bio-->
                 </div> <!-- end meet-the-team-container-->
@@ -66,7 +77,7 @@
         </section>
         <section class="mission-vision">
             <div class="container">
-                <div class="mission-statement">
+                <div class="mission-statement" id="mission">
                     <h3>Our Mission</h3>
                     <p>At Backbone Distributions, we deliver anything and everything you need as soon as possible. We strive to provide our customers with the care and quality they expect from a small town business, in the big city.</p>
                 </div> <!-- end mission-statement-->
@@ -78,7 +89,7 @@
         </section>
     </main>
 
-    <footer class="site-footer">
+    <footer class="site-footer" role="contentinfo">
         <div class="container">
             <ul>
                 <li class="current"><a href="#">Home</a></li>
