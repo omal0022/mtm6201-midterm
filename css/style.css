@@ -267,9 +267,20 @@ form .tracking {
 	border-radius: 0;
   }
 
-.tracking {
+.tracking form:active {
 	display: flex;
 	margin: auto;
+}
+
+.tracking {
+	position :relative;
+	animation-name: trackMove;
+	animation-duration: 1.5s;
+}
+
+@keyframes trackMove {
+	0% {left:-1500px;}
+	100%{left:0px;}
 }
 
 .tracking form {
@@ -384,6 +395,12 @@ main, .contact-page, .meet-the-team {
 .contact-page form {
 	margin-top: 1.5rem;
 }
+
+.contact-page input[type=submit]:active {
+		opacity:1;
+		transform:translateX(600px);
+		transition:1s;
+	  }
 
 /* ====== Carousel ====== */
 
@@ -734,6 +751,17 @@ footer ul li a {
 	.nav-logo {
 		display: grid;
 		grid-template-columns: 25% 75%;
+	}
+
+	.tracking {
+		position :relative;
+		animation-name: trackMove;
+		animation-duration: 2s;
+	}
+	
+	@keyframes trackMove {
+		0% {left:-1500px;}
+		100%{left:0px;}
 	}
 
 	/* Background image used so text will show on top */
