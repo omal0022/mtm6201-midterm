@@ -175,7 +175,7 @@ nav .current {
 	padding: .5em 1em;
 	font-weight: bold;
   }
-  
+
   .skip-links a:focus{
 	top: 0;
   }
@@ -195,8 +195,7 @@ nav .current {
 	line-height: 1rem;
 }
 
-
-/* ====== Home Page ====== */
+/* ======= Home Page ======= */
 
 video {
 	width: 100%;
