@@ -190,6 +190,12 @@ nav .current {
     color: white;
 }
 
+.site-footer h4{
+	color: white;
+	line-height: 1.25rem;
+}
+
+
 /* ====== Home Page ====== */
 
 video {
@@ -378,9 +384,10 @@ form ::placeholder {
 	padding-bottom: 8rem;
 }
 
-.contact-page h3 {
-	color: #42476c;
+.contact-page h2 {
+	text-align: left;
 }
+
 .contact-page p, h4{
 	margin-top: .75rem;
 }
@@ -398,7 +405,7 @@ main, .contact-page, .meet-the-team {
 
 .contact-page input[type=submit]:active {
 		opacity:1;
-		transform:translateX(600px);
+		transform:translateX(600px) skew(-15deg, 0);
 		transition:1s;
 	  }
 
